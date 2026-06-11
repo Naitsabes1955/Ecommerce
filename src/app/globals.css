@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0f0a00;
+  --foreground: #f5e6c8;
 }
 
 @theme inline {
@@ -12,31 +12,31 @@
   --font-mono: var(--font-geist-mono);
 }
 
-
-
-@theme{
-  --color-primary-50: #fef7e0;
-  --color-primary-100: #fdeeb8;
-  --color-primary-200: #fbe48f;
-  --color-primary-300: #f9db5c;
-  --color-primary-400: #f5ca33;
-  --color-primary-500: #efb810;
-  --color-primary-600: #d19d0d;
-  --color-primary-700: #b2820b;
-  --color-primary-800: #946709;
-  --color-primary-900: #764c06;
-
-  --color-wine-700: #8f3d38;
-  --color-wine-900: #56070c;
-  --color-wine-950: #350a06;
-
-  --color-vine-800: #56070c;
-  --color-vine-900: #4a0307;
+/* @theme {
+  --color-dark:       #0f0a00;   
+  --color-surface:    #1a1200;
+  --color-gold:       #E8A020; 
+  --color-gold-light: #F0B840;
+  --color-cream:      #f5e6c8;
+  --color-muted:      #9a8870;
+} */
+@theme {
+  --color-dark:       #09090b;
+  --color-surface:    #18181b;
+  --color-surface-hover: #27272a;
+  
+  --color-gold:       #e2b867;  
+  --color-gold-light: #f1d499;
+  
+  --color-cream:      #fafafa;
+  --color-muted:      #a1a1aa;
+  
+  --color-border-vibe: rgba(226, 184, 103, 0.1);
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0f0a00;
+    --foreground: #f5e6c8;
   }
 }
 
