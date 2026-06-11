@@ -6,26 +6,26 @@ export default function Home(){
         <>
         <main className=" text-white">
             {/* HEADER */}
-            <header className="sticky top-0 z-50 border-b border-amber-200 bg-amber-400/90 backdrop-blur">
+            <header className="sticky top-0 z-50 border-b border-amber-600 bg-amber-500/95 backdrop-blur">
                 <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-                <h1 className="text-2xl font-semibold text-black">
+                <h1 className="text-2xl font-bold text-black">
                     My Ecommerce
                 </h1>
 
                 <nav className="hidden gap-8 md:flex">
-                    <a href="#services" className="hover:text-red-950">
+                    <a href="#services" className="hover:text-red-950 font-semibold">
                     Quienes Somos?
                     </a>
 
-                    <a href="#products" className="hover:text-red-950">
+                    <a href="#products" className="hover:text-red-950 font-semibold">
                     Nuestros Productos
                     </a>
 
-                    <a href="#process" className="hover:text-red-950">
-                    Que Ofrecemos?
+                    <a href="#process" className="hover:text-red-950 font-semibold">
+                    Nuestro Proceso
                     </a>
 
-                    <a href="#contact" className="hover:text-red-950">
+                    <a href="#contact" className="hover:text-red-950 font-semibold">
                     Contáctanos
                     </a>
                 </nav>
@@ -37,7 +37,7 @@ export default function Home(){
                 </div>
             </header>
 
-            <section className="relative overflow-hidden bg-red-950">
+            <section className="relative overflow-hidden bg-vine-800">
                 {/* <div className="absolute left-0 top-0 h-96 w-96 rounded-full bg-cyan-500/20 blur-3xl"></div>*/}
                 <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
                 <div className="grid items-center gap-16 lg:grid-cols-2">
@@ -111,40 +111,40 @@ export default function Home(){
             {/* SERVICIOS */}
             <section
                 id="services"
-                className="mx-auto overflow-hidden px-6 py-24 bg-amber-500/95"
+                className="mx-auto overflow-hidden px-6 py-24 bg-amber-500/95"/* bg-amber-500/95 */
             >
-                <div className="max-w-7xl text-center  lg:px-2">
+            <div className="max-w-7xl  lg:px-2">
 
-                <h2 className="text-center text-4xl font-bold">
-                Nuestros Servicios
+                <h2 className=" text-4xl font-bold text-vine-800">{/* text-wine-900/99 */}
+                ¿Quienes Somos?
                 </h2>
 
-                <p className="mt-4 text-center text-slate-400">
-                Soluciones completas para potenciar tu marca.
+                <p className="mt-4 text-gray-200">
+                Somos una mini-empresa que ayuda a que tus ideas y productos obtengan esa unicidad que tu brindas
                 </p>
 
                 <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-                    
+                    <img src="asd" alt="marv" />
                 
                 </div>
-                </div>
+            </div>
             </section>
 
             {/* PRODUCTOS */}
             <section
                 id="products"
-                className="bg-slate-900 py-24"
+                className="bg-vine-800 py-24"
             >
                 <div className="mx-auto max-w-7xl px-6">
                 <h2 className="text-center text-4xl font-bold">
-                    Productos Destacados
+                    Nuestros Productos
                 </h2>
 
                 <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
                     
                     <div
                     
-                        className="overflow-hidden rounded-3xl border border-slate-800 bg-slate-950"
+                        className="overflow-hidden rounded-3xl border border-primary-300 bg-amber-500/80"
                     >
                         <img
                         className="h-64 w-full object-cover"
@@ -154,19 +154,20 @@ export default function Home(){
                         <h3 className="text-xl font-semibold">
                         </h3>
 
-                        <button className="mt-6 w-full rounded-xl bg-cyan-500 py-3 font-semibold text-slate-950 hover:bg-cyan-400">
+                        <button className="mt-6 w-full rounded-xl bg-vine-800 py-3 font-semibold text-white hover:bg-vine-900">
                             Ver Detalles
                         </button>
                         </div>
                     </div>
                 </div>
+                
                 </div>
             </section>
 
             {/* PROCESO */}
             <section
                 id="process"
-                className="mx-auto max-w-7xl px-6 py-24"
+                className="mx-auto max-w-7xl bg-amber-500 px-6 py-24"
             >
                 <h2 className="text-center text-4xl font-bold">
                 ¿Cómo Trabajamos?

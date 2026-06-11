@@ -12,6 +12,27 @@
   --font-mono: var(--font-geist-mono);
 }
 
+
+
+@theme{
+  --color-primary-50: #fef7e0;
+  --color-primary-100: #fdeeb8;
+  --color-primary-200: #fbe48f;
+  --color-primary-300: #f9db5c;
+  --color-primary-400: #f5ca33;
+  --color-primary-500: #efb810;
+  --color-primary-600: #d19d0d;
+  --color-primary-700: #b2820b;
+  --color-primary-800: #946709;
+  --color-primary-900: #764c06;
+
+  --color-wine-700: #8f3d38;
+  --color-wine-900: #56070c;
+  --color-wine-950: #350a06;
+
+  --color-vine-800: #56070c;
+  --color-vine-900: #4a0307;
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
