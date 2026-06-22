@@ -1,0 +1,33 @@
+import type { AuthForm, AuthResponse } from "@/types/auth";
+
+const baseUrl = process.env.NEXT_PUBLIC_API_URL?.replace(/\/$/, "") ?? "";
+
+const getHeaders = () => ({
+  "Content-Type": "application/json",
+});
+
+const buildUrl = (path: string) => {
+  if (baseUrl) {
+    return `${baseUrl}${path}`;
+  }
+
+  return path.startsWith("/") ? path : `/${path}`;
+};
+
+const request = async <T>(path: string, body: unknown): Promise<T> => {
+  const response = await fetch(buildUrl(path), {
+    method: "POST",
+    headers: getHeaders(),
+    body: JSON.stringify(body),
+  });
+
+  const data = await response.json();
+  if (!response.ok) {
+    throw new Error(data?.message || "Error en la petición");
+  }
+
+  return data as T;
+};
+
+export const register = (payload: AuthForm) => request<AuthResponse>("/api/register", payload);
+export const login = (payload: AuthForm) => request<AuthResponse>("/api/login", payload);
